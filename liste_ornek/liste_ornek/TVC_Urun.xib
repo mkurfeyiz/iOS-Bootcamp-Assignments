@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="125" id="KGk-i7-Jjw" customClass="TVC_Urun" customModule="liste_ornek" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sDe-Hr-g8W">
+                        <rect key="frame" x="16" y="8" width="120" height="109"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="jUe-TL-lLf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Başlık" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7N1-NC-dyL">
+                        <rect key="frame" x="160" y="16" width="312" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alt Başlık" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdu-nu-2eR">
+                        <rect key="frame" x="160" y="49" width="312" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yeni Fiyat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIe-GM-FKe">
+                        <rect key="frame" x="160" y="82" width="75" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eski Fiyat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q37-Ag-wfs">
+                        <rect key="frame" x="251" y="82" width="74" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="q37-Ag-wfs" firstAttribute="leading" secondItem="OIe-GM-FKe" secondAttribute="trailing" constant="16" id="A2q-V9-aiJ"/>
+                    <constraint firstItem="OIe-GM-FKe" firstAttribute="leading" secondItem="sDe-Hr-g8W" secondAttribute="trailing" constant="24" id="BW5-np-27u"/>
+                    <constraint firstItem="sDe-Hr-g8W" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="JJe-h9-y7c"/>
+                    <constraint firstItem="OIe-GM-FKe" firstAttribute="top" secondItem="bdu-nu-2eR" secondAttribute="bottom" constant="12" id="K0E-Il-bSa"/>
+                    <constraint firstItem="bdu-nu-2eR" firstAttribute="top" secondItem="7N1-NC-dyL" secondAttribute="bottom" constant="12" id="SBf-lG-TR4"/>
+                    <constraint firstItem="7N1-NC-dyL" firstAttribute="leading" secondItem="sDe-Hr-g8W" secondAttribute="trailing" constant="24" id="XvH-Cx-tTU"/>
+                    <constraint firstItem="q37-Ag-wfs" firstAttribute="top" secondItem="bdu-nu-2eR" secondAttribute="bottom" constant="12" id="c6R-8k-2cZ"/>
+                    <constraint firstAttribute="trailing" secondItem="bdu-nu-2eR" secondAttribute="trailing" constant="8" id="dJa-W0-f7h"/>
+                    <constraint firstAttribute="bottom" secondItem="sDe-Hr-g8W" secondAttribute="bottom" constant="8" id="fkG-0z-N4x"/>
+                    <constraint firstItem="bdu-nu-2eR" firstAttribute="leading" secondItem="sDe-Hr-g8W" secondAttribute="trailing" constant="24" id="k7E-qC-IXZ"/>
+                    <constraint firstAttribute="trailing" secondItem="7N1-NC-dyL" secondAttribute="trailing" constant="8" id="lBg-KC-hH9"/>
+                    <constraint firstItem="sDe-Hr-g8W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="lWH-ko-BUk"/>
+                    <constraint firstItem="7N1-NC-dyL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="rbL-64-SFF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ivUrun" destination="sDe-Hr-g8W" id="CMQ-9l-hvB"/>
+                <outlet property="lblAltBaslik" destination="bdu-nu-2eR" id="kWy-Kw-ta4"/>
+                <outlet property="lblBaslik" destination="7N1-NC-dyL" id="OTS-pR-26j"/>
+                <outlet property="lblEskiFiyat" destination="q37-Ag-wfs" id="ouK-9Q-1qq"/>
+                <outlet property="lblYeniFiyat" destination="OIe-GM-FKe" id="MRJ-id-UPn"/>
+            </connections>
+            <point key="canvasLocation" x="189.85507246376812" y="88.727678571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

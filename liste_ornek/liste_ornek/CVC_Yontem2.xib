@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CVC_Yontem2" customModule="liste_ornek" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="181" height="119"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="181" height="119"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WXM-62-Ey4">
+                        <rect key="frame" x="0.0" y="8" width="80" height="103"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="jIQ-Om-n2J"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzl-zO-h5I">
+                        <rect key="frame" x="85" y="18" width="76" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eski Fiyat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yog-oT-oZX">
+                        <rect key="frame" x="85" y="49" width="76" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yeni Fiyat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjK-Hd-y8w">
+                        <rect key="frame" x="85" y="80" width="76" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="qzl-zO-h5I" firstAttribute="leading" secondItem="WXM-62-Ey4" secondAttribute="trailing" constant="5" id="LDh-8n-Y2l"/>
+                <constraint firstItem="yog-oT-oZX" firstAttribute="top" secondItem="qzl-zO-h5I" secondAttribute="bottom" constant="10" id="NWb-eG-NOn"/>
+                <constraint firstItem="HjK-Hd-y8w" firstAttribute="top" secondItem="yog-oT-oZX" secondAttribute="bottom" constant="10" id="R3G-Ts-y2F"/>
+                <constraint firstAttribute="trailing" secondItem="HjK-Hd-y8w" secondAttribute="trailing" constant="20" id="Ryj-Jy-202"/>
+                <constraint firstItem="yog-oT-oZX" firstAttribute="leading" secondItem="WXM-62-Ey4" secondAttribute="trailing" constant="5" id="esA-kl-XLY"/>
+                <constraint firstItem="WXM-62-Ey4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gpc-Ly-8GU"/>
+                <constraint firstAttribute="trailing" secondItem="qzl-zO-h5I" secondAttribute="trailing" constant="20" id="mM9-KT-e5I"/>
+                <constraint firstItem="WXM-62-Ey4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="sV8-q3-6Yq"/>
+                <constraint firstItem="HjK-Hd-y8w" firstAttribute="leading" secondItem="WXM-62-Ey4" secondAttribute="trailing" constant="5" id="tX2-A4-3XM"/>
+                <constraint firstAttribute="trailing" secondItem="yog-oT-oZX" secondAttribute="trailing" constant="20" id="tfw-Vk-sft"/>
+                <constraint firstAttribute="bottom" secondItem="WXM-62-Ey4" secondAttribute="bottom" constant="8" id="z2b-ux-z9y"/>
+                <constraint firstItem="qzl-zO-h5I" firstAttribute="top" secondItem="WXM-62-Ey4" secondAttribute="top" constant="10" id="z3Q-O3-NnC"/>
+            </constraints>
+            <size key="customSize" width="240" height="119"/>
+            <connections>
+                <outlet property="ivUrun" destination="WXM-62-Ey4" id="k1m-ID-e6R"/>
+                <outlet property="lblAd" destination="qzl-zO-h5I" id="nJF-1Q-N5T"/>
+                <outlet property="lblEskiFiyat" destination="yog-oT-oZX" id="kAP-W7-08F"/>
+                <outlet property="lblYeniFiyat" destination="HjK-Hd-y8w" id="tZs-ug-e7n"/>
+            </connections>
+            <point key="canvasLocation" x="-28.260869565217394" y="83.370535714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>
