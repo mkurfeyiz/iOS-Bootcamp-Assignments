@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="TVC_Contact" customModule="rehber_ornek" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z53-p6-Bro">
+                        <rect key="frame" x="8" y="8" width="104" height="104"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Z53-p6-Bro" secondAttribute="height" multiplier="1:1" id="Z4p-8U-Kpl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXe-Ja-bLG">
+                        <rect key="frame" x="133" y="8" width="90" height="104"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <color key="textColor" red="0.1960784314" green="0.32156862749999998" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CO6-pq-GpB">
+                        <rect key="frame" x="231" y="8" width="90" height="104"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <color key="textColor" red="0.1960784314" green="0.32156862749999998" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fXe-Ja-bLG" firstAttribute="leading" secondItem="Z53-p6-Bro" secondAttribute="trailing" constant="21" id="0Ee-zP-eKu"/>
+                    <constraint firstItem="CO6-pq-GpB" firstAttribute="top" secondItem="fXe-Ja-bLG" secondAttribute="top" id="13I-W2-zBX"/>
+                    <constraint firstItem="CO6-pq-GpB" firstAttribute="width" secondItem="fXe-Ja-bLG" secondAttribute="width" id="IZc-Kj-1Zs"/>
+                    <constraint firstItem="Z53-p6-Bro" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="L2s-57-9gS"/>
+                    <constraint firstItem="CO6-pq-GpB" firstAttribute="bottom" secondItem="fXe-Ja-bLG" secondAttribute="bottom" id="UUi-7H-2tl"/>
+                    <constraint firstItem="fXe-Ja-bLG" firstAttribute="bottom" secondItem="Z53-p6-Bro" secondAttribute="bottom" id="etD-GO-7Si"/>
+                    <constraint firstItem="Z53-p6-Bro" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="f7w-wN-gm1"/>
+                    <constraint firstItem="CO6-pq-GpB" firstAttribute="leading" secondItem="fXe-Ja-bLG" secondAttribute="trailing" constant="8" id="fGA-bd-HIQ"/>
+                    <constraint firstAttribute="bottom" secondItem="Z53-p6-Bro" secondAttribute="bottom" constant="8" id="kik-6z-HZ6"/>
+                    <constraint firstItem="fXe-Ja-bLG" firstAttribute="top" secondItem="Z53-p6-Bro" secondAttribute="top" id="xxa-fA-RZ8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ivPhoto" destination="Z53-p6-Bro" id="i9L-H7-2Xy"/>
+                <outlet property="lblFirstName" destination="fXe-Ja-bLG" id="tDt-gk-RjO"/>
+                <outlet property="lblLastName" destination="CO6-pq-GpB" id="XAd-oG-dvY"/>
+            </connections>
+            <point key="canvasLocation" x="177.536231884058" y="91.741071428571431"/>
+        </tableViewCell>
+    </objects>
+</document>

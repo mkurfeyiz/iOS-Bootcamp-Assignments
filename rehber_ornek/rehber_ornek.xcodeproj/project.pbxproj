@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DDD678F279FD61400DCBFA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD678E279FD61400DCBFA4 /* AppDelegate.swift */; };
+		4DDD6791279FD61400DCBFA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD6790279FD61400DCBFA4 /* SceneDelegate.swift */; };
+		4DDD6796279FD61400DCBFA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD6794279FD61400DCBFA4 /* Main.storyboard */; };
+		4DDD679B279FD61700DCBFA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD679A279FD61700DCBFA4 /* Assets.xcassets */; };
+		4DDD679E279FD61700DCBFA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD679C279FD61700DCBFA4 /* LaunchScreen.storyboard */; };
+		4DDD67A8279FD6D800DCBFA4 /* VC_ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD67A7279FD6D800DCBFA4 /* VC_ContactList.swift */; };
+		4DDD67AA279FD70800DCBFA4 /* VC_Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD67A9279FD70800DCBFA4 /* VC_Detail.swift */; };
+		4DDD67AD279FDA2100DCBFA4 /* TVC_Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD67AB279FDA2100DCBFA4 /* TVC_Contact.swift */; };
+		4DDD67AE279FDA2100DCBFA4 /* TVC_Contact.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD67AC279FDA2100DCBFA4 /* TVC_Contact.xib */; };
+		4DDD67B1279FDA4500DCBFA4 /* TVC_Phones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD67AF279FDA4500DCBFA4 /* TVC_Phones.swift */; };
+		4DDD67B2279FDA4500DCBFA4 /* TVC_Phones.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DDD67B0279FDA4500DCBFA4 /* TVC_Phones.xib */; };
+		4DDD67B5279FDAC100DCBFA4 /* ContactDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD67B4279FDAC100DCBFA4 /* ContactDAL.swift */; };
+		4DDD67B7279FDAD000DCBFA4 /* PhoneDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD67B6279FDAD000DCBFA4 /* PhoneDAL.swift */; };
+		4DDD67B927A00AB600DCBFA4 /* DAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD67B827A00AB600DCBFA4 /* DAL.swift */; };
+		4DDD67BC27A0141D00DCBFA4 /* rehber_ornek.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD67BA27A0141D00DCBFA4 /* rehber_ornek.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4DDD678B279FD61400DCBFA4 /* rehber_ornek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rehber_ornek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDD678E279FD61400DCBFA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DDD6790279FD61400DCBFA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4DDD6795279FD61400DCBFA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DDD679A279FD61700DCBFA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DDD679D279FD61700DCBFA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DDD679F279FD61700DCBFA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DDD67A7279FD6D800DCBFA4 /* VC_ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_ContactList.swift; sourceTree = "<group>"; };
+		4DDD67A9279FD70800DCBFA4 /* VC_Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Detail.swift; sourceTree = "<group>"; };
+		4DDD67AB279FDA2100DCBFA4 /* TVC_Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC_Contact.swift; sourceTree = "<group>"; };
+		4DDD67AC279FDA2100DCBFA4 /* TVC_Contact.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVC_Contact.xib; sourceTree = "<group>"; };
+		4DDD67AF279FDA4500DCBFA4 /* TVC_Phones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC_Phones.swift; sourceTree = "<group>"; };
+		4DDD67B0279FDA4500DCBFA4 /* TVC_Phones.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVC_Phones.xib; sourceTree = "<group>"; };
+		4DDD67B4279FDAC100DCBFA4 /* ContactDAL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDAL.swift; sourceTree = "<group>"; };
+		4DDD67B6279FDAD000DCBFA4 /* PhoneDAL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDAL.swift; sourceTree = "<group>"; };
+		4DDD67B827A00AB600DCBFA4 /* DAL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAL.swift; sourceTree = "<group>"; };
+		4DDD67BB27A0141D00DCBFA4 /* rehber_ornek.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = rehber_ornek.xcdatamodel; sourceTree = "<group>"; };
+		4DDD67EC27A01A5000DCBFA4 /* rehber_ornek_new.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = rehber_ornek_new.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DDD6788279FD61400DCBFA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DDD6782279FD61400DCBFA4 = {
+			isa = PBXGroup;
+			children = (
+				4DDD678D279FD61400DCBFA4 /* rehber_ornek */,
+				4DDD678C279FD61400DCBFA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DDD678C279FD61400DCBFA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD678B279FD61400DCBFA4 /* rehber_ornek.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DDD678D279FD61400DCBFA4 /* rehber_ornek */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD67B3279FDAAE00DCBFA4 /* DAL */,
+				4DDD67A6279FD69100DCBFA4 /* Cell */,
+				4DDD67A5279FD67100DCBFA4 /* ViewController */,
+				4DDD678E279FD61400DCBFA4 /* AppDelegate.swift */,
+				4DDD6790279FD61400DCBFA4 /* SceneDelegate.swift */,
+				4DDD6794279FD61400DCBFA4 /* Main.storyboard */,
+				4DDD679A279FD61700DCBFA4 /* Assets.xcassets */,
+				4DDD679C279FD61700DCBFA4 /* LaunchScreen.storyboard */,
+				4DDD679F279FD61700DCBFA4 /* Info.plist */,
+				4DDD67BA27A0141D00DCBFA4 /* rehber_ornek.xcdatamodeld */,
+			);
+			path = rehber_ornek;
+			sourceTree = "<group>";
+		};
+		4DDD67A5279FD67100DCBFA4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD67A7279FD6D800DCBFA4 /* VC_ContactList.swift */,
+				4DDD67A9279FD70800DCBFA4 /* VC_Detail.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4DDD67A6279FD69100DCBFA4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD67AB279FDA2100DCBFA4 /* TVC_Contact.swift */,
+				4DDD67AC279FDA2100DCBFA4 /* TVC_Contact.xib */,
+				4DDD67AF279FDA4500DCBFA4 /* TVC_Phones.swift */,
+				4DDD67B0279FDA4500DCBFA4 /* TVC_Phones.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4DDD67B3279FDAAE00DCBFA4 /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				4DDD67B4279FDAC100DCBFA4 /* ContactDAL.swift */,
+				4DDD67B6279FDAD000DCBFA4 /* PhoneDAL.swift */,
+				4DDD67B827A00AB600DCBFA4 /* DAL.swift */,
+			);
+			path = DAL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DDD678A279FD61400DCBFA4 /* rehber_ornek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDD67A2279FD61700DCBFA4 /* Build configuration list for PBXNativeTarget "rehber_ornek" */;
+			buildPhases = (
+				4DDD6787279FD61400DCBFA4 /* Sources */,
+				4DDD6788279FD61400DCBFA4 /* Frameworks */,
+				4DDD6789279FD61400DCBFA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rehber_ornek;
+			productName = rehber_ornek;
+			productReference = 4DDD678B279FD61400DCBFA4 /* rehber_ornek.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DDD6783279FD61400DCBFA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					4DDD678A279FD61400DCBFA4 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 4DDD6786279FD61400DCBFA4 /* Build configuration list for PBXProject "rehber_ornek" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DDD6782279FD61400DCBFA4;
+			productRefGroup = 4DDD678C279FD61400DCBFA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DDD678A279FD61400DCBFA4 /* rehber_ornek */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DDD6789279FD61400DCBFA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDD67AE279FDA2100DCBFA4 /* TVC_Contact.xib in Resources */,
+				4DDD679E279FD61700DCBFA4 /* LaunchScreen.storyboard in Resources */,
+				4DDD67B2279FDA4500DCBFA4 /* TVC_Phones.xib in Resources */,
+				4DDD679B279FD61700DCBFA4 /* Assets.xcassets in Resources */,
+				4DDD6796279FD61400DCBFA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DDD6787279FD61400DCBFA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDD67B5279FDAC100DCBFA4 /* ContactDAL.swift in Sources */,
+				4DDD67AD279FDA2100DCBFA4 /* TVC_Contact.swift in Sources */,
+				4DDD678F279FD61400DCBFA4 /* AppDelegate.swift in Sources */,
+				4DDD6791279FD61400DCBFA4 /* SceneDelegate.swift in Sources */,
+				4DDD67AA279FD70800DCBFA4 /* VC_Detail.swift in Sources */,
+				4DDD67B7279FDAD000DCBFA4 /* PhoneDAL.swift in Sources */,
+				4DDD67B1279FDA4500DCBFA4 /* TVC_Phones.swift in Sources */,
+				4DDD67BC27A0141D00DCBFA4 /* rehber_ornek.xcdatamodeld in Sources */,
+				4DDD67A8279FD6D800DCBFA4 /* VC_ContactList.swift in Sources */,
+				4DDD67B927A00AB600DCBFA4 /* DAL.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4DDD6794279FD61400DCBFA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDD6795279FD61400DCBFA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4DDD679C279FD61700DCBFA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDD679D279FD61700DCBFA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DDD67A0279FD61700DCBFA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DDD67A1279FD61700DCBFA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DDD67A3279FD61700DCBFA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = rehber_ornek/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mk.rehber-ornek";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DDD67A4279FD61700DCBFA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = rehber_ornek/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mk.rehber-ornek";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DDD6786279FD61400DCBFA4 /* Build configuration list for PBXProject "rehber_ornek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDD67A0279FD61700DCBFA4 /* Debug */,
+				4DDD67A1279FD61700DCBFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDD67A2279FD61700DCBFA4 /* Build configuration list for PBXNativeTarget "rehber_ornek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDD67A3279FD61700DCBFA4 /* Debug */,
+				4DDD67A4279FD61700DCBFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4DDD67BA27A0141D00DCBFA4 /* rehber_ornek.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4DDD67EC27A01A5000DCBFA4 /* rehber_ornek_new.xcdatamodel */,
+				4DDD67BB27A0141D00DCBFA4 /* rehber_ornek.xcdatamodel */,
+			);
+			currentVersion = 4DDD67BB27A0141D00DCBFA4 /* rehber_ornek.xcdatamodel */;
+			path = rehber_ornek.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4DDD6783279FD61400DCBFA4 /* Project object */;
+}
