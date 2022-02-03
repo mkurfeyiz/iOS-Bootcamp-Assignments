@@ -49,6 +49,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                     let loginRes = response as! HTTPURLResponse
                     
                     if loginRes.statusCode == 200 && data != nil {
+                        //To check the values first
                         //let json = try JSON(data: data!)
                         if self.loginResponse == nil {
                             self.loginResponse = CResponse()
@@ -90,15 +91,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                             self.categoryResponse = CategoryResponse()
                         }
                         
-                        let json = try JSON(data: data!)
+                        //let json = try JSON(data: data!)
                         
                         self.categoryResponse = try JSONDecoder().decode(CategoryResponse.self, from: data!)
                         
-                        for item in self.categoryResponse.data {
+                        self.categoryList = self.categoryResponse.data
+                        //Needed a loop for setting image urls for every category
+                        /*for item in self.categoryResponse.data {
                             //No need to set every categories image url in here. We will be doing it in
                             //collectionView cellForItemAt
                             self.categoryList.append(item)
-                        }
+                        }*/
                         
                         DispatchQueue.main.async {
                             self.setLayout()
@@ -107,7 +110,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                             self.cvCategories.reloadData()
                         }
                         
-                        print(json)
+                        //print(json)
                     }
                 } catch {
                     
